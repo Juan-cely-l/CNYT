@@ -36,13 +36,12 @@ La librería `operaciones_complex` proporciona las siguientes funciones para ope
    ```
 
 ### 3. Producto de Números Complejos: `mult_complex(x, y)`
-- **Descripción**: Multiplica dos números complejos utilizando la fórmula:
+- ![image](https://github.com/user-attachments/assets/365e37bf-bf54-4291-8e5a-ea13fc4d6ead)
 
   \[
   (a + bi) 	imes (c + di) = (ac - bd) + (ad + bc)i
   \]
 
-  Donde \(a + bi\) y \(c + di\) son los números complejos a multiplicar. El resultado es otro número complejo cuya parte real es \(ac - bd\) y cuya parte imaginaria es \(ad + bc\).
 - **Ejemplo**:
   ```python
   x = [3, 2]
@@ -51,13 +50,8 @@ La librería `operaciones_complex` proporciona las siguientes funciones para ope
   ```
 
 ### 4. División de Números Complejos: `division_complex(x, y)`
-- **Descripción**: Divide dos números complejos usando la fórmula:
+-![image](https://github.com/user-attachments/assets/f5c14c7e-a0a5-4e12-8baf-a880b8d46952)
 
-  \[
-  \frac{a + bi}{c + di} = \frac{(a + bi) 	imes (c - di)}{(c + di) 	imes (c - di)} = \frac{(ac + bd) + (bc - ad)i}{c^2 + d^2}
-  \]
-
-  Donde \(a + bi\) y \(c + di\) son los números complejos a dividir, y \(c - di\) es el conjugado del denominador.
 - **Ejemplo**:
   ```python
   x = [3, 2]
@@ -66,11 +60,8 @@ La librería `operaciones_complex` proporciona las siguientes funciones para ope
   ```
 
 ### 5. Conjugado de un Número Complejo: `conjugado_complex(x)`
-- **Descripción**: Calcula el conjugado de un número complejo. El conjugado de un número complejo \(a + bi\) se obtiene cambiando el signo de la parte imaginaria, resultando en \(a - bi\).
+- ![image](https://github.com/user-attachments/assets/0841a0e1-9441-4f98-8297-34bfc128c5d8)
 
-  \[
-  	ext{Conjugado}(a + bi) = a - bi
-  \]
 - **Ejemplo**:
    ```python
    x = [3, 2]
@@ -78,7 +69,8 @@ La librería `operaciones_complex` proporciona las siguientes funciones para ope
    ```
 
 ### 6. Módulo de Número Complejo: `modulo_complex(x)`
-- **Descripción**: Calcula el módulo o magnitud de un número complejo, usando la fórmula: \( |z| = \sqrt{a^2 + b^2} \)
+- ![image](https://github.com/user-attachments/assets/cfa03979-0913-478f-826d-c374df636284)
+
 - **Ejemplo**:
    ```python
    x = [3, 2]
@@ -86,21 +78,44 @@ La librería `operaciones_complex` proporciona las siguientes funciones para ope
    ```
 
 ### 7. Conversión de Cartesiano a Polar: `cartesiano_polar(x)`
-- **Descripción**: Convierte un número complejo de su forma cartesiana \(a + bi\) a su forma polar \(r \angle \theta\). La magnitud \(r\) y el ángulo \(\theta\) se calculan utilizando las siguientes fórmulas:
+- ![image](https://github.com/user-attachments/assets/b16d5e94-7002-41fa-8580-5707145cb4f2)
 
-  \[
-  r = \sqrt{a^2 + b^2}
-  \]
-  \[
-  \theta = \tan^{-1}\left(\frac{b}{a}\right)
-  \]
-
-  Donde \(r\) es la magnitud del número complejo y \(\theta\) es el ángulo en radianes.
 - **Ejemplo**:
   ```python
   x = [3, 2]
   resultado = cartesiano_polar(x)  # Resultado: [3.605, 0.588]
-  ```
+
+### 8. Conversión de Polar a Cartesiano: `polar_cartesiano(x)`
+-![image](https://github.com/user-attachments/assets/0f565e6f-4998-4e17-9e36-2a2d942c0849)
+- **Ejemplo**:
+  ```python
+  x = [3.605, 0.588]
+  resultado = polar_cartesiano(x)  # Resultado: [3, 2]
+
+ ### 9. fase de Polar : `fase_complex_polar(x)`
+ -![image](https://github.com/user-attachments/assets/48d4df1a-fc96-42fc-94f4-d794975f599d)
+ 
+- **Ejemplo**:
+  ```python
+  x = [3.605, 0.588]
+  resultado = fase_complex_polar(x)  # Resultado: 0.588
+  
+ ### 10. fase de cartesiano : `fase_complex_cartesiano(x)`
+ ![image](https://github.com/user-attachments/assets/5bbb12d8-83f8-4c5b-8a49-ac78ed0d74b4)
+
+ - **Ejemplo**:
+  ```python
+x = [3, 2]
+resultado = fase_complex_cartesiano(x)  # Resultado:  (33.69, 0.588)
+
+
+
+
+
+
+
+
+   ```
 
   
 
